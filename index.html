@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess game</title>
+    <link href="https://fonts.googleapis.com/css?family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div id="wordBox">
+            <h1>Press Any key to get Started</h1>
+            <div id="currentWord"></div>
+            <div id="winningWord"></div>
+        </div>
+        <div id="keyboard"></div>
+        <div id="winningBox">
+            <div>Number of Guesses Ramaining : <span id="guessesLeft"></span></div>
+            <div>Letters Already Guessed: <span id="lettersAlreadyGuessed"></span></div>
+            <div>Wins : <span id="wins"></span></div>
+            <div>losses : <span id="losses"></span></div>
+        </div>
+
+    </div>
+    <div id="musicBtn" >
+        <div id="pauseBtn"><img src="assets/images/pause.png"></div>
+        <!--<div id="playBtn"><img src="assets/images/play.png"></div>-->
+    </div>
+
+    <div id="audio">
+        <audio id="eminem" class="sound">
+            <source src="./assets/audio/Eminem.mp3" type="audio/mp3">
+        </audio>
+        <audio id="rihanna" class="sound">
+            <source src="./assets/audio/Rihanna.mp3" type="audio/mp3">
+        </audio>
+        <audio id="eagles" class="sound">
+            <source src="./assets/audio/Eagles.mp3" type="audio/mp3">
+        </audio>
+        <audio id="queen" class="sound">
+            <source src="./assets/audio/Queen.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
