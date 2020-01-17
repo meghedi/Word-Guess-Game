@@ -13,21 +13,29 @@
 
 <body>
     <div class="container">
+
         <div id="wordBox">
             <h1>Press Any key to get Started</h1>
             <div id="currentWord"></div>
             <div id="winningWord"></div>
         </div>
-        <div id="keyboard"></div>
-        <div id="winningBox">
-            <div>Number of Guesses Ramaining : <span id="guessesLeft"></span></div>
-            <div>Letters Already Guessed: <span id="lettersAlreadyGuessed"></span></div>
-            <div>Wins : <span id="wins"></span></div>
-            <div>losses : <span id="losses"></span></div>
+        <div class="bottomPart">
+            <div id="leftPart">
+                <div id="keyboard"></div>
+            </div>
+            <div id="rightPart">
+                <div id="winningBox">
+                    <div>Wins : <span id="wins"></span></div>
+                    <div>losses : <span id="losses"></span></div>
+                    <div>Number of Guesses Ramaining : <span id="guessesLeft"></span></div>
+                    <div>Letters Already Guessed: <span id="lettersAlreadyGuessed"></span></div>
+                </div>
+            </div>
         </div>
+    </div>
 
     </div>
-    <div id="musicBtn" >
+    <div id="musicBtn">
         <div id="pauseBtn"><img src="assets/images/pause.png"></div>
         <!--<div id="playBtn"><img src="assets/images/play.png"></div>-->
     </div>

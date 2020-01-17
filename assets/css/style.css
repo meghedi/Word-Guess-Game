@@ -27,11 +27,14 @@ h1{
     font-size: 20px;
     text-align: left;
 }
+.bottomPart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 #winningBox{
-    position: fixed;
-    right: -50px;
-    top: 100px;
 }
 
 #winningBox div{
@@ -49,7 +52,7 @@ h1{
 
 
 #keyboard{
-    max-width:600px;
+    max-width:468px;
     display: flex;
     flex-flow: wrap;
     align-items: center;

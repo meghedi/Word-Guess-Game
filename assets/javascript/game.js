@@ -131,5 +131,6 @@ document.querySelectorAll(".letters").forEach(element => {
 document.getElementById("pauseBtn").addEventListener("click", function (event) {
     document.querySelectorAll('.sound').forEach(element => {
         element.pause();
+        this.style.display = 'none';
     });
 });
